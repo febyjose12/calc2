@@ -8,42 +8,26 @@ def test_calculator_result():
 
 def test_calculator_add():
     """Testing the Add function of the calculator"""
-    # Arrange by instantiating the calc class
+    #Arrange by instantiating the calc class
     calc = Calculator()
-    # Act by calling the method to be tested
-    calc.add_number(1)
-    # Assert that the results are correct
-    assert calc.result == 1
+    #Act by calling the method to be tested
+    calc.add_number(4)
+    #Assert that the results are correct
+    assert calc.result == 4
 
 def test_calculator_get_result():
     """Testing the Get result method of the calculator"""
     calc = Calculator()
-    calc.add_number(1)
-    assert calc.get_result() == 1
+    assert calc.get_result() == 0
 
 def test_calculator_subtract():
     """Testing the subtract method of the calculator"""
     calc = Calculator()
     calc.subtract_number(1)
     assert calc.get_result() == -1
-
 def test_calculator_multiply():
-    """Testing the multiply method of the calculator"""
+    """ tests multiplication of two numbers"""
     calc = Calculator()
-    calc.result = 2
-    calc.multiply_number(4)
-    assert calc.get_result() == 8
-
-
-def test_calculator_divide():
-    """Testing the divide method of the calculator"""
-    calc = Calculator()
-    calc.result = 40
-    calc.divide_number(2)
-    assert calc.get_result() == 20
-
-def test_calculator_divide_by_zero():
-    """Testing the divide method of the calculator dividing by zero"""
-    calc = Calculator()
-    calc.result = 2
-    assert calc.divide_number(0) == ZeroDivisionError
+    result  = calc.multiply_numbers(1,2)
+    assert result == 2
+    
