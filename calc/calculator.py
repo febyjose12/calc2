@@ -14,4 +14,3 @@ class Calculator:
     def subtract_numbers(value_a, value_b):
         """ subtract number from result"""
         return Subtraction.subtract(value_a,value_b)
-
