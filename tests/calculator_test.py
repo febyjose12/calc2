@@ -33,18 +33,18 @@ def test_calculator_history_static_property(clear_history_fixture):
 def test_clear_history():
     """Testing clear history returns true for success"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
-    Calculator.add_numbers(1.0, 2.0)
+    Calculator.add_numbers(4.0, 3.0)
     assert Calculator.clear_history() == True
 
 def test_get_calculation(clear_history_fixture):
     """Testing getting a specific calculation out of the history"""
     # pylint: disable=unused-argument,redefined-outer-name
-    Calculator.add_numbers(1.0, 2.0)
-    assert Calculator.get_calculation(0).get_result() == 3
+    Calculator.add_numbers(4.0, 3.0)
+    assert Calculator.get_calculation(0).get_result() == 7
 
 def test_get_calculation_last(clear_history_fixture):
     """Testing getting the last calculation from the history"""
     # pylint: disable=unused-argument,redefined-outer-name
-    Calculator.add_numbers(1.0, 2.0)
-    Calculator.divide_numbers(25.0, 5.0)
+    Calculator.add_numbers(4.0, 3.0)
+    Calculator.divide_numbers(20.0, 4.0)
     assert Calculator.get_calculation_last().get_result() == 5

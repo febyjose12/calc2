@@ -35,11 +35,11 @@ def test_calculation_multiplication():
 def test_calculation_division():
     """testing that our calculator has a static method for division"""
     #Arrange
-    mynumbers = (60.0, 5.0)
+    mynumbers = (30.0, 5.0)
     division = Division(mynumbers)
     #Act
     #Assert
-    assert division.get_result() == 12
+    assert division.get_result() == 6
 
 def test_calculation_division_zero():
     """testing that our calculator has a static method for division by zero"""
