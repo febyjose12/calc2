@@ -16,4 +16,3 @@ class Division(Calculation):
             return result_division
         except ZeroDivisionError:
             return ZeroDivisionError
-        
