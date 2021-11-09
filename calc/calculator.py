@@ -52,4 +52,3 @@ class Calculator:
         division = Division(args)
         Calculator.history.append(division)
         return division.get_result()
-
