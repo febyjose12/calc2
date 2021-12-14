@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<!--    <h1>Index I should see this change with a page refresh</h1>-->
+<!--    <p class="important">-->
+<!--      Welcome to my awesome homepage.-->
+<!--        <img src="{{ url_for('static', filename='images/sample.jpeg') }}">-->
+<!--    </p>-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title> Website Tutorial</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <!--   <link href="css/main.css" rel="stylesheet" > -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+   <body>
+      Tutorial
+      <div class="container-fluid">
+         <div class="row">
+            <nav class="navbar navbar-expand-md
+               justify-content-start
+               bg-dark navbar-dark
+               col-12">
+               <!-- Brand -->
+               <a class="navbar-brand" href="index.html"></a>
+               <!-- Responsive Button for the smaller menu -->
+               <button class="navbar-toggler" type="button"
+                  data-toggle="collapse" data-target="#collapsibleNavbar">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- Links -->
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href="OOP.html">OOP</a>
+                     <li class="nav-item">
+                     <a class="nav-link" href="AAA%20Testing.html">AAA</a>
+                     <li class="nav-item">
+                     <a class="nav-link" href="OOP%20concepts.html">concepts</a>
+                     <li class="nav-item">
+                      <a class="nav-link" href="azure.html">azure</a>"
+                      <li class="nav-item">
+                     <a class="nav-link" href="calculator.html">Calculator program</a>
+                      <li class="nav-item">
+                      <a class="nav-link" href="calculator2.html">Calculator</a>
+
+                      </li>
+                     </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div>
+         </div>
+      <br>
+         <p>
+         <center><h1> Principles of Object-Oriented Programming </h1></center>
+         </p> <br>
+         <p> •	OOP ( object oriented programing) ,In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming.
+ </p>
+         <br>
+         <ul>
+
+
+       </li>
+ <h2> Inheritance  </h2>
+            <li> Inheritance is the procedure in which one class inherits the attributes and methods of another class.  The class whose properties are inherited are called Parent class. And the class that inherits the properties from the parent class is the Child class. The interesting thing is, along with the inherited properties and methods, a child class can have its own properties and methods.</li>
+             <li> In Calculator application, this method allows to use the fields and methods from previously existing classes. For example, the addition, subtraction, multiplication, and division classes can inherit the properties of the calculation class. Also, the calculation history class inherits properties from each calculation class. For example, the history class can inherit the properties of the addition and other class functions. This method helps to reduce the confusion and complexity of the program code. </li>
+
+  <h2> Encapsulation </h2>
+            <li> his puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data.</li>
+             <li>In our calculator application, we use encapsulation by establishing classes with their own methods, variables, and functions. The history of calculations is kept in a list, and the history calculation class is provided with a clear history function. Encapsulation prevents a function class, such as the addition class, from clearing the history class's history. The clear history function is only useful for the class for which it was created.</li>
+
+  <h2> Polymorphism </h2>
+            <li> The word polymorphism means having many forms. In programming, polymorphism means the same function name being used for different types.</li>
+             <li>The get result() method in the calculator program is an interesting illustration of polymorphism. The addition, subtraction, multiplication, and division classes all have this function. The get result() function can be used for all of them, despite the fact that they are different classes. This is comparable to how the Python method len() can be used to represent a variety of data types, such as numbers, and lists.</li>
+
+<h2> Abstraction </h2>
+             <li>It is the concept of object-oriented programming that shows only necessary attributes and hides unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.</li>
+             <li>Abstraction is selecting data from a larger pool to show only relevant details of the object to the user. So in calculator application,  It helps in reducing programming complexity and efforts. It is one of the most important concepts of OOPs.</li>
+         </ul>
+
+      </div>
+
+       {% endblock %}
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </div>
+</html>
+</html>

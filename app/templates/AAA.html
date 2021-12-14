@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<!--    <h1>Index I should see this change with a page refresh</h1>-->
+<!--    <p class="important">-->
+<!--      Welcome to my awesome homepage.-->
+<!--        <img src="{{ url_for('static', filename='images/sample.jpeg') }}">-->
+<!--    </p>-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title> Website Tutorial</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <!--   <link href="css/main.css" rel="stylesheet" > -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+   <body>
+      Tutorial
+      <div class="container-fluid">
+         <div class="row">
+            <nav class="navbar navbar-expand-md
+               justify-content-start
+               bg-dark navbar-dark
+               col-12">
+               <!-- Brand -->
+               <a class="navbar-brand" href="index.html"></a>
+               <!-- Responsive Button for the smaller menu -->
+               <button class="navbar-toggler" type="button"
+                  data-toggle="collapse" data-target="#collapsibleNavbar">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- Links -->
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href="OOP.html">OOP</a>
+                     <li class="nav-item">
+                     <a class="nav-link" href="AAA%20Testing.html">AAA</a>
+                     <li class="nav-item">
+                     <a class="nav-link" href="OOP%20concepts.html">concepts</a>
+                     <li class="nav-item">
+                      <a class="nav-link" href="azure.html">azure</a>"
+                      <li class="nav-item">
+                     <a class="nav-link" href="calculator.html">Calculator program</a>
+                      <li class="nav-item">
+                      <a class="nav-link" href="calculator2.html">Calculator</a>
+
+                      </li>
+                     </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div>
+         </div>
+         <br>
+         <p>
+         <center><h1> AAA testing with Python (ARRANGE-ACT-ASSERT) & why is it important? </h1></center>
+         </p> <br>
+         <p> •	We use tests in programming too. There are several different kinds of tests, like unit tests, integration tests, or end-to-end tests, but all functional tests do the same basic thing: they try something and report PASS or FAIL.
+ </p>
+         <br>
+         <ul>
+             <li> Arrange section is where you only have code required to setup that specific test.</li>
+             <li> Act – perform the actual work of the test</li>
+             <li>Assert – verify the result</li>
+
+       </li>
+ <h2> Benefits of Using Arrange Act Assert </h2>
+            <li> Clearly separates what is being tested from the setup and verification steps.</li>
+
+  <h2> What is unit testing? </h2>
+            <li> Unit testing is a programming process that allows you to check the correctness of individual modules of the program source code.The idea is to write tests for each function or method. This allows you to quickly check whether the next change in the code will lead to has led to problems, meaning, errors in the already tested places of the program. Additionally, tests helps in  the elimination of such errors in function.</li>
+
+  <h2>Using unit testing in Python</h2>
+            <li> For Python, the library unittest is a fairly effective and popular unit testing tool. This allows both the module code and the writing of tests to easily trace an object-oriented style, which is very convenient for testing methods and classes</li>
+
+
+
+
+
+         </ul>
+
+      </div>
+       {% endblock %}
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </div>
+</html>
+</html>

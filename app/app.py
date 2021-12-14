@@ -19,3 +19,22 @@ def calculator_get():
 @app.route("/calculator", methods=['POST'])
 def calculator_post():
     return CalculatorController.post()
+@app.route("/AAA", methods=['GET'])
+def AAA_get():
+
+    return CalculatorController.AAA()
+
+@app.route("/azure", methods=['GET'])
+def azure_get():
+
+    return CalculatorController.azure()
+
+@app.route("/concepts", methods=['GET'])
+def concepts_get():
+    """get concepts page"""
+    return CalculatorController.concepts()
+
+@app.route("/OOP", methods=['GET'])
+def oop_get():
+    """get OOP page"""
+    return CalculatorController.OOP()

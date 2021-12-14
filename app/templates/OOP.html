@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<!--    <h1>Index I should see this change with a page refresh</h1>-->
+<!--    <p class="important">-->
+<!--      Welcome to my awesome homepage.-->
+<!--        <img src="{{ url_for('static', filename='images/sample.jpeg') }}">-->
+<!--    </p>-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title> Website Tutorial</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <!--   <link href="css/main.css" rel="stylesheet" > -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+   <body>
+      Tutorial
+      <div class="container-fluid">
+         <div class="row">
+            <nav class="navbar navbar-expand-md
+               justify-content-start
+               bg-dark navbar-dark
+               col-12">
+               <!-- Brand -->
+               <a class="navbar-brand" href="index.html"></a>
+               <!-- Responsive Button for the smaller menu -->
+               <button class="navbar-toggler" type="button"
+                  data-toggle="collapse" data-target="#collapsibleNavbar">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- Links -->
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href="OOP.html">OOP</a>
+                     <li class="nav-item">
+                     <a class="nav-link" href="AAA%20Testing.html">AAA</a>
+                     <li class="nav-item">
+                     <a class="nav-link" href="OOP%20concepts.html">concepts</a>
+                     <li class="nav-item">
+                      <a class="nav-link" href="azure.html">azure</a>"
+                      <li class="nav-item">
+                     <a class="nav-link" href="calculator.html">Calculator program</a>
+                      <li class="nav-item">
+                      <a class="nav-link" href="calculator2.html">Calculator</a>
+
+                      </li>
+                     </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div>
+         </div>
+         <br>
+         <p>
+         <center><h1>Overview of OOP (object-oriented programing) & Pylint</h1></center>
+         </p> <br>
+         <p> •	OOP ( object oriented programing) : In Python, object-oriented Programming (OOPs) is a programming concept that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.
+ </p>
+         <br>
+         <ul>
+            <li> Visit <a href="https://www.geeksforgeeks.org/python-oops-concepts/">this site</a> to have a deep understanding of OOP concepts.</li>
+            <li> Main Concepts of Object-Oriented Programming (OOPs)<li>
+	             Class<li>
+	             Objects<li>
+	             Polymorphism<li>
+	             Encapsulation<li>
+	             Inheritance
+       </li>
+ <h2> Class & Object </h2>
+            <li> A class is a collection of objects. A class contains the blueprints or the prototype from which the objects are being created.</li>
+            <li> The object is an entity that has a state and behavior associated with it. It may be any real-world object like a mouse, keyboard, chair, table, pen, etc. Integers, strings, floating-point numbers, even arrays, and dictionaries, are all objects.</li>
+
+  <h2> Pylint </h2>
+            <li> Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard.It can also look for certain type errors, it can recommend suggestions about how particular issues can be solved and can offer you details about the code's complexity.</li>
+
+  <h2>what is Pytest?</h2>
+            <li> Pytest is a test framework in python. To install pytest, we need to use the command pip install pytest. After installation, we can verify if python has been installed by the command pytest –version</li>
+
+
+        </div>
+   <h2>Glossary</h2>
+            <li> A namespace- is a collection of currently defined symbolic names along with information about the object that each name references. You can think of a namespace as a dictionary in which the keys are the object names and the values are the objects themselves. Each key-value pair maps a name to its corresponding object.</li>
+             <li>Constructors in Python- Constructors are generally used for instantiating an object. The goal of constructors is to assign values to the data members of the class when an object of the class is created. In Python the __init__() method is called the constructor. </li>
+             <li>Type Hinting- In simple word, type hinting means providing hints to function to only accept the given data type.</li>
+             <li>Type Casting- We are allowed to transform our data type up through casting.</li>
+             <li>Unit Testing- is the first level of software testing, where the purpose is to validate that each unit in the program performs as designed. </li>
+             <li>Static Methods- is marked with a @staticmethod decorator to flag it as a static method. This type of method takes neither a self nor a cls parameter. </li>
+             <li>Facade- is a structural design pattern that provides a simplified but limited interface to a complex system of classes, library or framework.</li>
+             <li>Design patterns- there are many design patterns that are used in programming. Factory method is one of them. </li>
+             <li>Method- a method is a code that only runs when it is called in object-oriented programming, a method is defined within a class</li>
+             <li>Property – property refers to the special values included in a class or object</li>
+
+         </ul>
+
+      </div>
+       {% endblock %}
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </div>
+</html>
+</html>
