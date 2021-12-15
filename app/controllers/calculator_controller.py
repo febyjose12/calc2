@@ -1,22 +1,19 @@
-"""controller app"""
-from flask import render_template, request, flash, redirect, url_for # pylint: disable=import-error, unused-import
-from app.controllers.controller import ControllerBase # pylint: disable=no-name-in-module
+from app.controllers.controller import ControllerBase
 from calc.calculator import Calculator
+from flask import render_template, request, flash, redirect, url_for
+
 
 class CalculatorController(ControllerBase):
-    """calculator controller"""
     history = []
-
     @staticmethod
     def post():
-        """calculator functions"""
         if request.form['value1'] == '' or request.form['value2'] == '':
-            error = 'You must enter a value for value 1 and or value 2.'
+            error = 'You must enter a value for value 1 and or value 2'
         if not request.form['value1'].isnumeric() or not request.form['value2'].isnumeric():
-            error = 'You must enter numeric values.'
+            error = 'Incorrect Inputs. Please Try Again.'
         else:
-            flash('Successful Calculation!')
-
+            flash('You successfully calculated')
+            flash('You are awesome')
 
             # get the values out of the form
             value1 = request.form['value1']
@@ -29,8 +26,7 @@ class CalculatorController(ControllerBase):
             result = str(Calculator.get_last_result_value())
             CalculatorController.history.append(result)
             data = CalculatorController.history
-
-            return render_template('result.html', value1=value1, data=data, value2=value2, operation=operation, result=result) # pylint: disable=line-too-long
+            return render_template('result.html', data=data, value1=value1, value2=value2, operation=operation, result=result)
         return render_template('calculator2.html', error=error)
 
     @staticmethod
