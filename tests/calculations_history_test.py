@@ -1,11 +1,11 @@
 """Testing history"""
 
 import pytest
-from calculator.history.calculations import Calculations
-from calculator.calculations.addition import Addition
-from calculator.calculations.subtraction import Subtraction
-from calculator.calculations.multiplication import Multiplication
-from calculator.calculations.division import Division
+from calc.history.calculations import Calculations
+from calc.calculations.addition import Addition
+from calc.calculations.subtraction import Subtraction
+from calc.calculations.multiplication import Multiplication
+from calc.calculations.division import Division
 
 @pytest.fixture
 def clear_history_fixture():
